@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Мастер Рацион — готовое питание с доставкой по Челябинску</title>
+<link rel="preload" as="font" type="font/woff2" href="fonts/manrope-cyrillic.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/manrope-latin.woff2" crossorigin>
+<link rel="stylesheet" href="site.css?v=38">
+</head>
+<body>
+
+<header class="head">
+  <div class="wrap head-inner">
+    <a class="logo" href="#top" aria-label="Мастер Food Professional">
+      <img class="logo-img" src="img/logo.png" width="223" height="84" alt="Мастер Food Professional">
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#dates-sec" class="on">Даты</a>
+      <a href="#tariffs">Рационы</a>
+      <a href="#menu">Меню</a>
+      <a href="#how">Как это работает</a>
+      <a href="#delivery">Доставка</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="head-right">
+      <a class="head-phone" id="head-phone" href="tel:+73512400400">
+        <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2Z"/></svg>
+        <span><i id="head-phone-num">+7 (351) 2-400-400</i><small id="head-phone-note">Челябинск, ежедневно 9:00–20:00</small></span>
+      </a>
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="hbadge"><svg viewBox="0 0 24 24" class="ico"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7Zm0 9.5A2.5 2.5 0 1 0 12 6.5a2.5 2.5 0 0 0 0 5Z"/></svg>ЧЕЛЯБИНСК · ДОСТАВКА ВЕЧЕРОМ</span>
+        <h1>Готовое питание<br>на каждый день</h1>
+        <p class="hlead">Четыре приёма пищи в день. Отметьте удобные даты, выберите рацион и меняйте блюда между категориями — стоимость пересчитывается автоматически.</p>
+        <div class="hfeats">
+          <div class="hfeat">
+            <svg viewBox="0 0 24 24" class="ico"><path d="M7 2v3M17 2v3M3.5 9h17M4 5h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/></svg>
+            <span>Выбирайте<br>от 3 до 10 дней</span>
+          </div>
+          <div class="hfeat">
+            <svg viewBox="0 0 24 24" class="ico"><path d="M4 7h9M17 7h3M4 17h3M11 17h9M15 4v6M9 14v6"/></svg>
+            <span>Меняйте блюда<br>под себя</span>
+          </div>
+          <div class="hfeat">
+            <svg viewBox="0 0 24 24" class="ico"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7zM6.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm11 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/></svg>
+            <span>Доставка вечером<br>по Челябинску</span>
+          </div>
+        </div>
+        <button class="btn-lime" id="hero-cta">Собрать свой рацион <span class="arr">→</span></button>
+      </div>
+
+      <div class="hero-media">
+        <div class="hero-shots">
+          <img class="shot shot-1" src="img/hero-sweet.webp" alt="Контейнер с завтраком" decoding="async" fetchpriority="high">
+          <img class="shot shot-2" src="img/hero-meat.webp" alt="Контейнер с обедом" decoding="async" fetchpriority="high">
+        </div>
+        <div class="tiers">
+          <b>3 рациона на ваш вкус</b>
+          <ul class="tiers-list">
+            <li><span class="tdot tdot-basic"></span>Базовый<i>1 000 ₽ / день</i></li>
+            <li><span class="tdot tdot-opt"></span>Оптимальный<i>1 300 ₽ / день</i></li>
+            <li><span class="tdot tdot-prem"></span>Премиальный<i>1 600 ₽ / день</i></li>
+          </ul>
+          <p>День = завтрак + обед + полдник + ужин. Доставка включена.</p>
+        </div>
+      </div>
+    </div>
+    <svg class="hero-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,60 C260,120 520,10 760,45 C1010,82 1240,110 1440,70 L1440,120 L0,120 Z" fill="#ffffff"/>
+    </svg>
+  </section>
+
+  <div class="wrap">
+    <div class="steps">
+      <button class="step active" id="step-1" data-goto="dates-sec"><span class="step-num">1</span><b>Даты доставки</b></button>
+      <button class="step" id="step-2" data-goto="tariffs"><span class="step-num">2</span><b>Рацион</b></button>
+      <button class="step" id="step-3" data-goto="menu"><span class="step-num">3</span><b>Меню и замены</b></button>
+      <button class="step" id="step-4" data-goto="how"><span class="step-num">4</span><b>Оформление</b></button>
+    </div>
+  </div>
+
+  <section class="section" id="dates-sec">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>1. Даты доставки</h2>
+        <p id="dates-lead">Доставка ежедневно вечером. Заказ на завтра принимается до 17:00 по Челябинску.</p>
+      </div>
+      <div class="dates-head">
+        <div class="hint">Выберите от 3 до 10 дней</div>
+        <div class="counter" id="counter"></div>
+        <button class="mini" id="btn-demo-dates">Пример: 5 дат с пропусками</button>
+      </div>
+      <div class="dates" id="dates"></div>
+      <div class="dates-note" id="dates-note"></div>
+    </div>
+  </section>
+
+  <section class="section" id="tariffs">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>2. Выберите рацион</h2>
+        <p>Рацион применяется ко всем выбранным датам. Любой день можно настроить отдельно — заменив блюда.</p>
+      </div>
+      <div class="tariffs" id="tariffs-list"></div>
+      <div class="tariff-cta">
+        <button class="btn-outline-cta" id="btn-order-clean">Заказать быстро, без изменений<span class="arr">→</span></button>
+        <button class="btn-ghost" id="btn-reset-all" hidden>↺ Сбросить все замены</button>
+        <span class="hint" id="clean-hint">Оставьте меню как есть — блюда уже подобраны под рацион и даты. Замены делать не обязательно.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="menu">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>3. Меню и замены</h2>
+        <p>Показаны только выбранные дни. Проверьте состав и при необходимости замените блюда.</p>
+      </div>
+      <div class="menu-toolbar">
+        <div class="mode-switch" role="group" aria-label="Вид меню">
+          <button class="mode-btn on" id="mode-overview" aria-pressed="true">
+            <svg viewBox="0 0 24 24" class="ico"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Краткий список</button>
+          <button class="mode-btn" id="mode-edit" aria-pressed="false">
+            <svg viewBox="0 0 24 24" class="ico"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg>Подробно</button>
+        </div>
+      </div>
+      <div id="menu-list"></div>
+    </div>
+  </section>
+
+  <section class="section" id="how">
+    <div class="wrap">
+      <div class="howbox">
+        <h2>Как это работает</h2>
+        <div class="how-grid">
+          <div class="how-item">
+            <svg viewBox="0 0 24 24" class="ico"><path d="M3 4h2l2.4 10.2h9.7L19 7H6.2"/><circle cx="9" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/></svg>
+            <b>1. Соберите заказ</b>
+            <p>Отметьте даты, выберите рацион и при желании замените блюда.</p>
+          </div>
+          <div class="how-item">
+            <svg viewBox="0 0 24 24" class="ico"><path d="M3 6h18v11H3zM3 10h18M7 15h3"/></svg>
+            <b>2. Платите онлайн</b>
+            <p>Оплата картой через Т-Банк. Ссылка на оплату действует 30 минут.</p>
+          </div>
+          <div class="how-item">
+            <svg viewBox="0 0 24 24" class="ico"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7zM6.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm11 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/></svg>
+            <b>3. Получаете доставку</b>
+            <p>Вечером в выбранные даты. Состав заказа приходит на email.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="delivery">
+    <div class="wrap footer-banner" id="foot-banner-wrap">
+      <a class="foot-banner" id="foot-banner-link" href="#menu" aria-label="Заказать блюда из каталога MasterFood">
+        <img id="foot-banner-img" decoding="async" src="img/banner-footer.webp" alt="Хотите добавить что-то особенное? Закажите любые блюда из каталога MasterFood — привезём вместе, без доплаты за доставку">
+      </a>
+    </div>
+    <div class="wrap footer-grid" id="contacts">
+      <div class="fcol">
+        <b class="fmark">мастер food professional</b>
+        <p>Готовые рационы с доставкой по Челябинску.<br>Ежедневно 9:00–20:00, доставка вечером 18:00–22:00.</p>
+        <div class="fphones">
+          <a href="tel:+79227103637">+7 (922) 710-36-37</a>
+          <a href="tel:+73512400400">+7 (351) 2-400-400</a>
+        </div>
+      </div>
+      <div class="fcol">
+        <b>Контакты</b>
+        <p>Многоканальный телефон:<br><a href="tel:+79227103637">+7 (922) 710-36-37</a><br><a href="tel:+73512400400">+7 (351) 2-400-400</a></p>
+        <p>Оформление заказа:<br><a href="tel:+79227103647">+7 (922) 710-36-47</a><br><a href="tel:+79227500010">+7 (922) 750-00-10</a></p>
+        <p>454014, г. Челябинск,<br>ул. Молодогвардейцев, д. 16</p>
+      </div>
+      <div class="fcol">
+        <b>Доставка и оплата</b>
+        <p>Доставка по Челябинску включена в цену питания.<br>Оплата картой на сайте, чек придёт на email.</p>
+        <p>Заказ можно изменить до оплаты.</p>
+      </div>
+      <div class="fcol fcol-req">
+        <b>Реквизиты</b>
+        <p>ИП Губанова Дарья Алексеевна<br>ИНН 745216904436<br>ОГРНИП 326745600045758<br>Межрайонная ИФНС № 17 по Челябинской области</p>
+        <p>р/с 40802810038150010110<br>Филиал «Екатеринбургский» АО «Альфа-Банк»<br>к/с 30101810100000000964<br>БИК 046577964</p>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <span>© 2026 Мастер Food Professional</span>
+      <nav class="fnav">
+        <a href="#contacts">Контакты</a>
+        <a href="policy.html">Политика конфиденциальности</a>
+        <a href="#delivery">Доставка и оплата</a>
+      </nav>
+    </div>
+  </footer>
+</main>
+
+<div class="overlay" id="replace-modal" data-open="false">
+  <div class="modal" role="dialog" aria-modal="true">
+    <div class="modal-head">
+      <div>
+        <h3>Заменить блюдо</h3>
+        <p id="replace-title"></p>
+        <p id="replace-sub" style="margin-top:2px"></p>
+      </div>
+      <button class="x" data-close="replace-modal" aria-label="Закрыть">✕</button>
+    </div>
+    <div class="modal-body">
+      <div id="replace-list"></div>
+      <p style="font-size:12px;color:var(--muted);margin:12px 0 0">Стоимость вариантов блюда уже включена в цену. Доплата за вариант не взимается.</p>
+    </div>
+  </div>
+</div>
+
+<div class="overlay" id="order-modal" data-open="false">
+  <div class="modal" role="dialog" aria-modal="true">
+    <div class="modal-head">
+      <div>
+        <h3>Оформление заказа</h3>
+        <p>Проверьте состав и адрес — после оплаты изменить заказ нельзя</p>
+      </div>
+      <button class="x" data-close="order-modal" aria-label="Закрыть">✕</button>
+    </div>
+    <div class="modal-body">
+      <form id="order-form">
+        <div class="form-grid">
+          <div class="field"><label>Имя</label><input required placeholder="Иван"></div>
+          <div class="field"><label>Телефон</label><input required placeholder="+7 900 000-00-00"></div>
+          <div class="field full"><label>Email</label><input type="email" required placeholder="ivan@example.ru"></div>
+          <div class="field"><label>Город</label><input required value="Челябинск"></div>
+          <div class="field"><label>Улица</label><input required placeholder="ул. Кирова"></div>
+          <div class="field"><label>Дом</label><input required placeholder="12"></div>
+          <div class="field"><label>Квартира</label><input required placeholder="45"></div>
+          <div class="field"><label>Подъезд</label><input placeholder="2"></div>
+          <div class="field"><label>Этаж</label><input placeholder="5"></div>
+          <div class="field"><label>Домофон</label><input placeholder="45К"></div>
+          <div class="field full"><label>Комментарий курьеру</label><textarea rows="2" placeholder="Позвонить за 10 минут"></textarea></div>
+        </div>
+
+        <div class="prev-label">Состав заказа</div>
+        <div id="order-preview"></div>
+
+        <label class="checkline"><input type="checkbox" required>
+          <span>Согласен с <a href="policy.html" target="_blank" rel="noopener">политикой конфиденциальности</a> и на обработку персональных данных. Согласие оформляется отдельно от иных документов.</span></label>
+
+        <button class="btn-lime wide" type="submit">Перейти к оплате <span class="arr">→</span></button>
+        <p class="prev-note">Оплата через Т-Банк · ссылка действует 30 минут · чек формируется онлайн-кассой</p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<div class="orderbar" id="orderbar">
+  <div class="wrap orderbar-inner">
+    <div class="ob-facts">
+      <div class="sum-item">
+        <svg viewBox="0 0 24 24" class="ico"><path d="M7 2v3M17 2v3M3.5 9h17M4 5h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/></svg>
+        <div><span>Дней</span><b id="sum-days">3 / 10</b></div>
+      </div>
+      <div class="sum-item">
+        <svg viewBox="0 0 24 24" class="ico"><path d="M6 3v7a2 2 0 0 0 4 0V3M8 10v11M15 3c-1.5 1.5-2 3.5-2 5.5 0 1.5.7 2.5 2 2.5v10"/></svg>
+        <div><span>Калорийность</span><b id="sum-kcal">—</b></div>
+      </div>
+      <div class="sum-item sum-item-cat">
+        <svg viewBox="0 0 24 24" class="ico"><path d="M12 3c4 4 6 7 6 10a6 6 0 0 1-12 0c0-3 2-6 6-10Z"/></svg>
+        <div><span>Рацион</span><b id="sum-cats">—</b></div>
+      </div>
+    </div>
+    <div class="ob-total">
+      <div class="sum-total"><span>Итого</span><b id="sum-total">—</b></div>
+      <button class="btn-lime" id="btn-order">Оформить заказ <span class="arr">→</span></button>
+    </div>
+  </div>
+</div>
+
+<script src="dish-info.js?v=1"></script>
+<script src="site.js?v=38"></script>
+</body>
+</html>
