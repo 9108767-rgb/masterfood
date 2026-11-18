@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Мобильная версия — Рационы</title>
+<style>
+  body { margin:0; background:#e6e2d8; font-family: Inter, -apple-system, "Segoe UI", Roboto, sans-serif; color:#1b2a22; }
+  .head { max-width:1180px; margin:0 auto; padding:34px 24px 6px; }
+  .head h1 { margin:0 0 6px; font-size:20px; }
+  .head p { margin:0; color:#5d6b62; font-size:13.5px; max-width:760px; line-height:1.55; }
+  .stage { max-width:1180px; margin:0 auto; padding:26px 24px 60px; display:flex; gap:44px; flex-wrap:wrap; }
+  .phone-wrap { flex:0 0 auto; }
+  .phone { width:390px; height:844px; background:#fff; border-radius:44px; padding:12px; box-sizing:border-box;
+           box-shadow:0 26px 60px rgba(20,32,24,.28), 0 0 0 1px rgba(0,0,0,.06); position:relative; }
+  .screen { width:100%; height:100%; border:0; border-radius:34px; background:#f6f4ee; display:block; }
+  .notch { position:absolute; top:20px; left:50%; transform:translateX(-50%); width:104px; height:24px;
+           background:#111; border-radius:14px; z-index:5; opacity:.85; }
+  .cap { margin-top:14px; font-size:12.5px; color:#5d6b62; text-align:center; }
+  .notes { flex:1 1 320px; min-width:300px; max-width:430px; }
+  .notes h2 { font-size:14px; text-transform:uppercase; letter-spacing:.05em; color:#5d6b62; margin:6px 0 10px; }
+  .notes ul { margin:0 0 22px; padding-left:18px; font-size:13.5px; line-height:1.65; }
+  .notes li { margin-bottom:6px; }
+  @media (max-width: 900px) { .stage { justify-content:center; } .phone { transform:scale(.92); transform-origin:top center; } }
+</style>
+</head>
+<body>
+  <div class="head">
+    <h1>Мобильная версия конструктора</h1>
+    <p>Тот же адаптивный макет в окне 390 × 844 (iPhone 14). Ниже — решения, которые применяются только на узком экране.</p>
+  </div>
+
+  <div class="stage">
+    <div class="phone-wrap">
+      <div class="phone"><div class="notch"></div><iframe class="screen" src="index.html" title="Мобильная версия"></iframe></div>
+      <div class="cap">390 × 844 · прокручивается внутри рамки</div>
+    </div>
+
+    <div class="notes">
+      <h2>Что меняется на телефоне</h2>
+      <ul>
+        <li>Шапка сжимается: остаются логотип, кнопка «Меню» и телефон; навигация уходит в выпадающее меню.</li>
+        <li>Даты доставки — горизонтальная лента с прокруткой, чипы крупные (44 px), выбрано 3 из 3–10.</li>
+        <li>В меню дня видна только колонка выбранного рациона; кнопка «Сравнить категории» разворачивает остальные две.</li>
+        <li>Дни свёрнуты в аккордеон: открыт один день, чтобы не листать 120 карточек.</li>
+        <li>Блюдо — компактная строка: название, вес, ккал, цена и «Заменить»; замена открывается в полноэкранном листе снизу.</li>
+        <li>Итог закреплён внизу экрана: дней, сумма и кнопка «Оформить»; он не перекрывает контент (учтён safe-area).</li>
+        <li>Форма заказа — одноколоночная, поля ввода 48 px, клавиатура не перекрывает кнопку оплаты.</li>
+        <li>Шаги 1–4 показаны без подписей — только номера и активный шаг.</li>
+      </ul>
+      <h2>Проверки</h2>
+      <ul>
+        <li>Тап-зоны не меньше 44 × 44 px.</li>
+        <li>Нет горизонтальной прокрутки страницы — только внутри ленты дат.</li>
+        <li>Контраст текста не ниже 4.5:1.</li>
+        <li>Вес страницы: один HTML + один CSS + один JS, без тяжёлых библиотек.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
